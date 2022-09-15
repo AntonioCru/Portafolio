@@ -1,0 +1,16 @@
+.container1{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(40,minmax(10px,1fr));
+    grid-template-rows: repeat(30,minmax(10px, 24px));
+    background-color: #30393B;
+}
+.title{
+    color: #fff;
+    grid-column: 5/39;
+    grid-row: 4/12;
+    font-size: 500%;
+    font-weight: 1000;
+    font-family: font-file-82132;
+
+}
