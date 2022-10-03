@@ -3,7 +3,7 @@
     grid-template-columns: repeat(10,minmax(10px,1fr));
     grid-template-rows: repeat(20,minmax(10px,1fr));;
     /* border: 1px solid red; */
-    width: 10%;
+    width:  10%;
     height: 100vh;
     position: fixed;
     background: linear-gradient(to bottom, #22282A, #30393B 50%, #22282A);
