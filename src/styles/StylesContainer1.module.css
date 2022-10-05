@@ -9,7 +9,7 @@
     grid-template-rows: repeat(30,minmax(10px, 24px)); */
   /* display: flex; */
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background-color: #30393b;
   padding-left: 15%;
   padding-top: 9%;
@@ -106,10 +106,8 @@
   top: 0;
 }
 
-
-
-.containerbotom2{
-    /* border: 1px solid white; */
+.containerbotom2 {
+  /* border: 1px solid white; */
 }
 .butttomContact2 {
   display: inline-flex;
@@ -126,32 +124,59 @@
   overflow: hidden;
 }
 .span2 {
-  transition: .4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
   position: absolute;
   left: 30%;
 }
-.butttomContact2 .icon2{
-display: flex;
-align-items: center;
-position: absolute;
-z-index: 2;
-left: -20px;
-transition: .3s ease-in-out all;
-opacity: 0;
+.butttomContact2 .icon2 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: -20px;
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
 }
-.butttomContact2:hover{
-    background-color: var(--color-focus);
-    color: black;
+.butttomContact2:hover {
+  background-color: var(--color-focus);
+  color: black;
 }
-.butttomContact2 svg{
-    width: 20px; 
-    height: 55px;
+.butttomContact2 svg {
+  width: 20px;
+  height: 55px;
 }
-.butttomContact2:hover .icon2{
-    left: calc(100% - 25px);
-    opacity: 1;
+.butttomContact2:hover .icon2 {
+  left: calc(100% - 25px);
+  opacity: 1;
 }
 .butttomContact2:hover span {
   left: 20px;
 }
 
+
+.containerSubTitulo {
+  margin-top: 200px;
+  border: 1px solid palegreen;
+}
+.SubTitleH2 {
+  color: var(--color-focus);
+  font-size: 60px;
+}
+.containerparagraph2{
+    border: 1px solid indianred;
+    display: flex;
+}
+.paragraph2 {
+  color: #fff;
+  border: 1px solid aqua;
+  margin-top: 40px;
+  width: 800px;
+  /* margin-right: 450px; */
+}
+.buttonsec2{
+    position: relative;
+    width: 15%;
+    height: 5%;
+    left: 80%;
+
+}
