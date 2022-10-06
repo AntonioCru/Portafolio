@@ -97,7 +97,7 @@ export const Container1 = () => {
         </h2>
           <div className={styles.containerparagraph2}>
         <p className={styles.paragraph2}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, repudiandae facere recusandae accusantium, cum eveniet officia sapiente molestias nesciunt aperiam rerum! Impedit, quae amet eligendi debitis velit consequatur molestias nobis!</p>
-        <button className={styles.buttonsec2}>¡Ver mas!</button>
+        <button className={styles.buttonsec2}><span className={styles.spanbuttonsec2}>¡Ver mas!</span></button>
         </div>
 
         
