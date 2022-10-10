@@ -14,7 +14,7 @@ import skoda from '../img/skoda.webp';
 export const SectionGalery = () => {
   return (
     <div className={styles.containerGalery}>
-      <img src={logoslack} alt="slak" className={`${styles.imgGalery}`}/>
+      <span><img src={logoslack} alt="slak" className={`${styles.imgGalery}`}/></span>
       <img src={black} alt="slak" className={`${styles.imgGalery}`}/>
       <img src={lobo} alt="slak" className={`${styles.imgGalery}`}/>
       <img src={silver} alt="slak" className={`${styles.imgGalery}`}/>
