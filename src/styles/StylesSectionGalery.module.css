@@ -28,11 +28,3 @@
     top: -1px; */
     transition: 0.3s ease-in-out all;
 }
-.containerGalery span{
-    position: relative;
-    z-index: 2;
-    transition: 0.3s ease all;
-}
-.imgGalery:hover::after{
-    /* left: 0; */
-}

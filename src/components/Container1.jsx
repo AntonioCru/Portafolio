@@ -38,7 +38,7 @@ export const Container1 = () => {
 
       <p className={styles.subtitulo}>Desarrollador Front End</p>
 
-      <div className={styles.containerButtom1}>
+      {/* <div className={styles.containerButtom1}>
         <button className={styles.butttomContact}>
           <div className={styles.icon}>
             <svg
@@ -57,7 +57,7 @@ export const Container1 = () => {
           </div>
           <span>¡Contactame!</span>
         </button>
-      </div>
+      </div> */}
 
       <div className={styles.containerbotom2}>
         <button className={styles.butttomContact2}>
