@@ -1,39 +1,576 @@
+import { MotionConfig, motion, useInView } from "framer-motion";
 import React from "react";
 import styles from "../styles/StylesContainer1.module.css";
+import { useRef } from "react";
+import { useFollowPointer } from "./use-follow-pointer.ts";
 
 export const Container1 = () => {
+  const ref = useRef(null);
+  const { x, y } = useFollowPointer(ref);
+  const isInView = useInView(ref, { once: true });
+
+  const stylesC = {
+    transform: isInView ? "none" : "translateX(-200px)",
+    opacity: isInView ? 1 : 0,
+    // transition: '1.3s all cubic-bezier(.17,.86,.76,.66)'
+  };
+
   return (
     <div className={styles.container1}>
       <h1 className={styles.title}>
-        <span>H</span>
-        <span>o</span>
-        <span>l</span>
-        <span>a</span>,<br />
-        <span>s</span>
-        <span>o</span>
-        <span>y</span>
-        <span>A</span>
-        <span>n</span>
-        <span>t</span>
-        <span>o</span>
-        <span>n</span>
-        <span>y</span>, <br />
-        <span>D</span>
-        <span>e</span>
-        <span>s</span>
-        <span>a</span>
-        <span>r</span>
-        <span>r</span>
-        <span>o</span>
-        <span>l</span>
-        <span>l</span>
-        <span>a</span>
-        <span>d</span>
-        <span>o</span>
-        <span>r</span>
-        <span>W</span>
-        <span>e</span>
-        <span>b</span>
+        <motion.span
+          style={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 1,
+              restDelta: 0.001,
+            },
+          }}
+        >
+          H
+        </motion.span>
+        <motion.span
+          style={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.6,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 2, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          o
+        </motion.span>
+        <motion.span
+          style={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.9,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 3, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          l
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.12,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          a
+        </motion.span>
+        ,<br />
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.15,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 3, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.00000001,
+            },
+          }}
+        >
+          s
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.1,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.00000001,
+            },
+          }}
+        >
+          o
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.6,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 3, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          y
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.6,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          A
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.6,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 5, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          n
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.9,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 6, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          t
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.9,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          o
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 6, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          n
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 3, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          y
+        </motion.span>
+        , <br />
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          D
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 5, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          e
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 7, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          s
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 5, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          a
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 6, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          r
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 7, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          r
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 6, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          o
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          l
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 8, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          l
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              stiffness: 50, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          a
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 4.5, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          d
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 5.5, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          o
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 6, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          r
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 4.3, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          W
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 6.6, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          e
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 4.9, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          b
+        </motion.span>
       </h1>
 
       <p className={styles.subtitulo}>Desarrollador Front End</p>
@@ -82,25 +619,211 @@ export const Container1 = () => {
 
       <div className={styles.containerSubTitulo}>
         <h2 className={styles.SubTitleH2}>
-            <span>METRO</span>
-            <span>y</span>
-            <span>PAGS</span>
-            <span>o</span>
-            <span>r</span>
-            <span>t</span>
-            <span>F</span>
-            <span>o</span>
-            <span>y</span>
-            <span>o</span>
-            <span>i</span>
-            <span>o</span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            M
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 4,
+                mass: 6, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            y
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.81, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 6, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            P
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.91, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                mass: 7, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            o
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.9, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                mass: 7, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            r
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.991, 0.1, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                mass: 8, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            t
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                mass: 5, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            f
+          </motion.span>
+          <motion.span   className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.51, 0.8, 1.01]
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                mass: 4.5, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001
+              },
+            }}>o</motion.span>
+          <motion.span   className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.11, 1, 1.01]
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                mass: 7.4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001
+              },
+            }}>l</motion.span>
+          <motion.span   className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 1.21, 1.2, 1.01]
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                mass: 3.5, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001
+              },
+            }}>i</motion.span>
+          <motion.span   className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, -0.71, -0.2, 1.01]
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                mass: 6.6, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001
+              },
+            }}>o</motion.span>
         </h2>
-          <div className={styles.containerparagraph2}>
-        <p className={styles.paragraph2}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, repudiandae facere recusandae accusantium, cum eveniet officia sapiente molestias nesciunt aperiam rerum! Impedit, quae amet eligendi debitis velit consequatur molestias nobis!</p>
-        <button className={styles.buttonsec2}><span className={styles.spanbuttonsec2}>¡Ver mas!</span></button>
+        <div className={styles.containerparagraph2}>
+          <p className={styles.paragraph2}>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et,
+            repudiandae facere recusandae accusantium, cum eveniet officia
+            sapiente molestias nesciunt aperiam rerum! Impedit, quae amet
+            eligendi debitis velit consequatur molestias nobis!
+          </p>
+          <button className={styles.buttonsec2}>
+            <span className={styles.spanbuttonsec2}>¡Ver mas!</span>
+          </button>
         </div>
-
-        
       </div>
     </div>
   );
