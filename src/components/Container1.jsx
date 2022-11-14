@@ -7,6 +7,7 @@ import { useFollowPointer } from "./use-follow-pointer.ts";
 export const Container1 = () => {
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
+
   const isInView = useInView(ref, { once: true });
 
   const stylesC = {
@@ -575,6 +576,18 @@ export const Container1 = () => {
 
       <p className={styles.subtitulo}>Desarrollador Front End</p>
 
+      
+      <motion.div
+        ref={ref}
+        className={styles.box}
+        animate={{ x, y }}
+        transition={{
+          type: 'spring',
+          damping: 3,
+          stiffness: 50,
+          restDelta:0.001
+        }}
+      ></motion.div>
       {/* <div className={styles.containerButtom1}>
         <button className={styles.butttomContact}>
           <div className={styles.icon}>
@@ -752,66 +765,82 @@ export const Container1 = () => {
           >
             f
           </motion.span>
-          <motion.span   className={stylesC}
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               default: {
                 duration: 0.3,
-                ease: [0, 0.51, 0.8, 1.01]
+                ease: [0, 0.51, 0.8, 1.01],
               },
               scale: {
                 type: "spring",
                 damping: 5,
                 mass: 4.5, //duration y bounce se anulara si se establece stiffness, damping o mass
-                restDelta: 0.0001
+                restDelta: 0.0001,
               },
-            }}>o</motion.span>
-          <motion.span   className={stylesC}
+            }}
+          >
+            o
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               default: {
                 duration: 0.3,
-                ease: [0, 0.11, 1, 1.01]
+                ease: [0, 0.11, 1, 1.01],
               },
               scale: {
                 type: "spring",
                 damping: 5,
                 mass: 7.4, //duration y bounce se anulara si se establece stiffness, damping o mass
-                restDelta: 0.0001
+                restDelta: 0.0001,
               },
-            }}>l</motion.span>
-          <motion.span   className={stylesC}
+            }}
+          >
+            l
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               default: {
                 duration: 0.3,
-                ease: [0, 1.21, 1.2, 1.01]
+                ease: [0, 1.21, 1.2, 1.01],
               },
               scale: {
                 type: "spring",
                 damping: 5,
                 mass: 3.5, //duration y bounce se anulara si se establece stiffness, damping o mass
-                restDelta: 0.0001
+                restDelta: 0.0001,
               },
-            }}>i</motion.span>
-          <motion.span   className={stylesC}
+            }}
+          >
+            i
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               default: {
                 duration: 0.3,
-                ease: [0, -0.71, -0.2, 1.01]
+                ease: [0, -0.71, -0.2, 1.01],
               },
               scale: {
                 type: "spring",
                 damping: 5,
                 mass: 6.6, //duration y bounce se anulara si se establece stiffness, damping o mass
-                restDelta: 0.0001
+                restDelta: 0.0001,
               },
-            }}>o</motion.span>
+            }}
+          >
+            o
+          </motion.span>
         </h2>
         <div className={styles.containerparagraph2}>
           <p className={styles.paragraph2}>

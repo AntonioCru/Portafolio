@@ -1,0 +1,21 @@
+:root {
+    --color-focus: #4fdbb8;
+    --colorback:#1d1d1d;
+    --margin-left: 135px;
+  }
+
+.app{
+    background-color: var(--colorback);
+    /* border: 2px solid red; */
+    margin-left: var(--margin-left);
+    padding-top: 8%;
+}
+
+
+
+/* ------------------------------ */
+
+.buttomCard{
+    background-color: var(--color-focus);
+    border: none;
+}

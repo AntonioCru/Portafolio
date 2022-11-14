@@ -6,7 +6,8 @@
     width:  10%;
     height: 100vh;
     position: fixed;
-    background: linear-gradient(to bottom, #22282A, #30393B 50%, #22282A);
+    /* background: linear-gradient(to bottom, #22282A, #30393B 50%, #22282A); */
+    background-color: #181818;
 }
 .logo{
     display: flex;
