@@ -1,6 +1,7 @@
 import { useAnimationFrame } from "framer-motion";
 import React, { useRef } from "react";
 import styles from "../styles/StylesSectionParagraph.module.css";
+import { motion, useInView } from "framer-motion";
 
 export const SectionParagraph = () => {
   const ref = useRef(null);
@@ -11,21 +12,203 @@ export const SectionParagraph = () => {
     ref.current.style.transform = `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`;
   });
 
+  const isInView = useInView(ref, { once: true });
+  const stylesC = {
+    transform: isInView ? "none" : "translateX(-200px)",
+    opacity: isInView ? 1 : 0,
+    // transition: '1.3s all cubic-bezier(.17,.86,.76,.66)'
+  };
+
   return (
     <div className={styles.containerSectionParagraph}>
-      <div className={styles.sectionParagraph}>
+      <div className={styles.sectionParagraph} ref={ref}>
         <h2>
-          <span>M</span>
-          <span>e</span>,<span>M</span>
-          <span>y</span>
-          <span>s</span>
-          <span>e</span>
-          <span>l</span>
-          <span>f</span>
-          <span>a</span>
-          <span>n</span>
-          <span>d</span>
-          <span>l</span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            M
+          </motion.span>
+
+
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>e</motion.span>,
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>M</motion.span>
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>y</motion.span>
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>s</motion.span>
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>e</motion.span>
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>l</motion.span>
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>f</motion.span>
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>a</motion.span>
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>n</motion.span>
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>d</motion.span>
+          <motion.span  className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}>l</motion.span>
         </h2>
 
         <p>
@@ -42,14 +225,15 @@ export const SectionParagraph = () => {
         </p>
       </div>
 
-
       <div className={styles.container3d}>
         <div className={styles.containerCube}>
           <div className={styles.cube} ref={ref}>
             {/* <div className={`${styles.side}${styles.front}`}></div> */}
             <div className={styles.side + " " + styles.front}>JAVASCRIPT</div>
             <div className={styles.side + " " + styles.left}>CSS</div>
-            <div className={styles.side + " " + styles.right}>FRAMER MOTION</div>
+            <div className={styles.side + " " + styles.right}>
+              FRAMER MOTION
+            </div>
             <div className={styles.side + " " + styles.top}>HTML</div>
             <div className={styles.side + " " + styles.bottom}>BOOSTRAP</div>
             <div className={styles.side + " " + styles.back}>REACT JS</div>

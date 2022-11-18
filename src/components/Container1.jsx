@@ -1,14 +1,21 @@
-import { MotionConfig, motion, useInView } from "framer-motion";
-import React from "react";
+import {
+  MotionConfig,
+  motion,
+  useInView,
+  useMotionValue,
+  useTransform,
+} from "framer-motion";
+import React, { useState } from "react";
 import styles from "../styles/StylesContainer1.module.css";
 import { useRef } from "react";
-import { useFollowPointer } from "./use-follow-pointer.ts";
+import { useFollowPointer } from "../auxiliar/use-follow-pointer.ts";
+import imgSvgBoostrap from '../svgs/boostrap.svg';
 
 export const Container1 = () => {
   const ref = useRef(null);
-  const { x, y } = useFollowPointer(ref);
+  const { x, y } = useFollowPointer(ref); //movimiento en el mouse
 
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true }); //uansdo no se muetra en pantalla
 
   const stylesC = {
     transform: isInView ? "none" : "translateX(-200px)",
@@ -18,6 +25,23 @@ export const Container1 = () => {
 
   return (
     <div className={styles.container1}>
+      <motion.div
+        className={styles.svgsBack}
+        animate={{
+          scale: [1, 2, 2, 1, 1],
+          rotate: [0, 0, 180, 180, 0],
+          borderRadius: ["50%", "50%", "50%", "50%", "50%"]
+        }}
+        transition={{
+          duration: 2,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+          repeat: Infinity,
+          repeatDelay: 1,
+        }}
+      ><img src={imgSvgBoostrap} alt="" />
+      </motion.div>
+
       <h1 className={styles.title}>
         <motion.span
           style={stylesC}
@@ -576,16 +600,15 @@ export const Container1 = () => {
 
       <p className={styles.subtitulo}>Desarrollador Front End</p>
 
-      
       <motion.div
         ref={ref}
         className={styles.box}
         animate={{ x, y }}
         transition={{
-          type: 'spring',
+          type: "spring",
           damping: 3,
           stiffness: 50,
-          restDelta:0.001
+          restDelta: 0.001,
         }}
       ></motion.div>
       {/* <div className={styles.containerButtom1}>

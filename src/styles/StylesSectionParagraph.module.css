@@ -3,6 +3,30 @@
     --colorback:#1d1d1d;
   }
 
+  
+  
+  @keyframes animar-texto {
+    from {
+      transform: scale(1, 1, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+      color: var(--color-focus);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+      color: #fff;
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
 
 .containerSectionParagraph{
     display: flex;
@@ -20,7 +44,12 @@
     font-size: 60px;
     margin-left: 65px;
     color: var(--color-focus);
+    display: flex;
 }
+.sectionParagraph span:hover{
+    animation: animar-texto 1s ease-in-out 1 normal both;
+}
+
 .sectionParagraph p{
     margin: 40px 80px 0 65px;
 }

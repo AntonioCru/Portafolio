@@ -19,3 +19,8 @@
     background-color: var(--color-focus);
     border: none;
 }
+.card{
+    background-color: var(--colorback);
+    color: #fff;
+    box-shadow: 1px 1px 9px black;
+}
