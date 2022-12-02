@@ -3,7 +3,7 @@
     --colorback:#1d1d1d;
     --margin-left: 135px;
   }
-
+/* componente SectiionTable */
 .app{
     background-color: var(--colorback);
     /* border: 2px solid red; */
@@ -13,14 +13,16 @@
 
 
 
-/* ------------------------------ */
+/* componente Cards */
 
+.card{
+    /* border: 1px solid yellow; */
+    background-color: var(--colorback);
+    color: #fff;
+    box-shadow: 1px 1px 4px black;
+    margin: 0 2% 4% 0;
+}
 .buttomCard{
     background-color: var(--color-focus);
     border: none;
-}
-.card{
-    background-color: var(--colorback);
-    color: #fff;
-    box-shadow: 1px 1px 9px black;
 }

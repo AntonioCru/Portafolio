@@ -4,6 +4,7 @@ import { Container1 } from "./components/Container1";
 import { SectionGalery } from "./components/SectionGalery";
 import {SectionParagraph} from "./components/SectionParagraph";
 import {SectionTable} from "./components/SectionTable";
+import { FormularioContact } from "./components/FormularioContact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SectionGalery/>
       <SectionParagraph/>
       <SectionTable/>
+      <FormularioContact/>
     </>
   );
 }

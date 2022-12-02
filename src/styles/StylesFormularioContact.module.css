@@ -1,0 +1,41 @@
+:root {
+  --color-focus: #4fdbb8;
+  --colorback: #1d1d1d;
+}
+.containerFormularioContact {
+  border: 1px solid red;
+  margin-left: 10%;
+  background-color: var(--colorback);
+  display: flex;
+}
+.containerContact {
+    border: 1px solid yellow;
+    color: var(--color-focus);
+    width: 50%;
+}
+.subtitleContact {
+  
+  margin-top: 5%;
+  margin-left: 4%;
+  font-size: 60px;
+}
+.paragraphContact {
+  color: #fff;
+  margin: 1% 11% 1% 5%;
+}
+.formulario{
+    border: 1px solid blueviolet;
+    margin: 2% 11% 2% 4%;
+    flex-wrap: wrap;
+}
+.inputText{
+    width: 50%;
+}
+.inputText2{
+    width: 100%;
+}
+.containerMap {
+    border: 1px solid orange;
+    color: var(--color-focus);
+    width: 50%;
+}

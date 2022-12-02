@@ -2,17 +2,45 @@
   --color-focus: #4fdbb8;
 }
 
-.svgsBack{
-  color: #fff;
+.svgsBoostrap{
+  /* color: #fff; */
+  /* border: 1px solid red; */
   display: flex;
   position: absolute;
-  left: 80%;
-  top:35%; 
-  transform: scale(20);
+  left: 82%;
+  top:1%; 
+  /* transform: scale(1); */
 
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background: transparent;
+}
+.jsImage{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top:1%; 
+  width: 50px;
+  height: 50px;
+}
+.reactImage{
+  display: flex;
+  position: absolute;
+  left: 18%;
+  top:1%; 
+  width: 60px;
+  height: 60px;
+}
+.floatImg{
+  /* border: 2px solid red; */
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  left: 91.87vw;
+  top: 15%;
+  width: 7%;
+  height: 20%;
+  background-image: url(http://cdn.shopify.com/s/files/1/0164/2390/t/2/assets/awwwards_honorable_white_right.png?7286100469750561975);
 }
 
 .container1 {

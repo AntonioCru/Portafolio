@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "../styles/StylesMenu.module.css";
 import icon from "../img/icon.png";
+import icon2 from "../img/icon2.png";
 import iconFacebook from '../img/facebook.png'
-import iconInstagram from '../img/instagram.png'
+import iconWhatsapp from '../img/whatsapp.png'
 import iconTwitter from '../img/twitter.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,7 +13,7 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 export const Menu = () => {
   return (
     <div className={styles.menuContainer}>
-      <img className={styles.logo} src={icon} alt="logo" />
+      <img className={styles.logo} src={icon2} alt="logo" />
       <h2 className={styles.name}>Antony</h2>
       <h5 className={styles.subTitle}>Desarrollador Web</h5>
 
@@ -26,7 +27,7 @@ export const Menu = () => {
       </ButtonGroup>
 
       <img className={styles.iconFacebook} src={iconFacebook} alt="facebook.icon" />
-      <img className={styles.iconInstagram} src={iconInstagram} alt="instagram.icon" />
+      <img className={styles.iconInstagram} src={iconWhatsapp} alt="whatsapp.icon" />
       <img className={styles.iconTwitter} src={iconTwitter} alt="twitter.icon" />
     </div>
   );

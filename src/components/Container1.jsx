@@ -10,6 +10,8 @@ import styles from "../styles/StylesContainer1.module.css";
 import { useRef } from "react";
 import { useFollowPointer } from "../auxiliar/use-follow-pointer.ts";
 import imgSvgBoostrap from '../svgs/boostrap.svg';
+import reactImg from '../img/reactImg.png';
+import javascripImg from '../img/javascriptImg.png';
 
 export const Container1 = () => {
   const ref = useRef(null);
@@ -25,22 +27,68 @@ export const Container1 = () => {
 
   return (
     <div className={styles.container1}>
-      <motion.div
-        className={styles.svgsBack}
-        animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 180, 180, 0],
-          borderRadius: ["50%", "50%", "50%", "50%", "50%"]
-        }}
-        transition={{
-          duration: 2,
-          ease: "easeInOut",
-          times: [0, 0.2, 0.5, 0.8, 1],
-          repeat: Infinity,
-          repeatDelay: 1,
-        }}
-      ><img src={imgSvgBoostrap} alt="" />
-      </motion.div>
+              <motion.div
+                className={styles.svgsBoostrap}
+                animate={{
+                  scale: [1, 2, 2, 1, 1],
+                  rotate: [0, 0, 180, 180, 0],
+                  // borderRadius: ["50%", "50%", "50%", "50%", "50%"]
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  times: [0, 0.2, 0.5, 0.8, 1],
+                  repeat: Infinity,
+                  repeatDelay: 1,
+                }}
+              ><img src={imgSvgBoostrap} alt="BoostrapSvg" />
+              </motion.div>
+
+              <motion.div
+                className={styles.reactImage}
+                animate={{
+                  scale: [1, 2, 2, 1, 1],
+                  rotate: [0, 0, 180, 180, 0],
+                  // borderRadius: ["50%", "50%", "50%", "50%", "50%"]
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  times: [0, 0.2, 0.5, 0.8, 1],
+                  repeat: Infinity,
+                  repeatDelay: 1,
+                }}
+              ><img src={reactImg} alt="ReactImage" />
+              </motion.div>
+
+              <motion.div
+              className={styles.floatImg}>
+
+              </motion.div>
+
+
+              <motion.div
+                className={styles.jsImage}
+                animate={{
+                  // scale: [1, 2, 2, 1, 1],
+                  rotate: 360
+                  // borderRadius: ["50%", "50%", "50%", "50%", "50%"]
+                }}
+                transition={{
+                  duration: 4,
+                  ease: "linear",
+                  // times: [0.2, 0.5],
+                  repeat: Infinity,
+                  // repeatDelay: 1,
+                  // repeatType: "mirror"
+                }}
+              ><img src={javascripImg} alt="ReactImage" />
+              </motion.div>
+
+              <motion.div
+              className={styles.floatImg}>
+
+              </motion.div>
 
       <h1 className={styles.title}>
         <motion.span
@@ -603,7 +651,7 @@ export const Container1 = () => {
       <motion.div
         ref={ref}
         className={styles.box}
-        animate={{ x, y }}
+        animate={{ x, y }}   //movimiento del mouse ---------------------------
         transition={{
           type: "spring",
           damping: 3,
