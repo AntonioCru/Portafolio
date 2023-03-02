@@ -14,7 +14,7 @@ function App() {
       <SectionGalery/>
       <SectionParagraph/>
       <SectionTable/>
-      <FormularioContact/>
+      {/* <FormularioContact/> */}
     </>
   );
 }
