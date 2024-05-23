@@ -1,60 +1,77 @@
-.menuContainer{
-    display: grid;
-    grid-template-columns: repeat(10,minmax(10px,1fr));
-    grid-template-rows: repeat(20,minmax(10px,1fr));;
-    /* border: 1px solid red; */
-    width:  10%;
-    height: 100vh;
-    position: fixed;
-    /* background: linear-gradient(to bottom, #22282A, #30393B 50%, #22282A); */
-    background-color: #181818;
+.menuContainer {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(10px, 1fr));
+  grid-template-rows: repeat(20, minmax(10px, 1fr));
+  /* border: 1px solid red; */
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+  /* background: linear-gradient(to bottom, #22282A, #30393B 50%, #22282A); */
+  background-color: #181818;
 }
-.logo{
-    display: flex;
-    grid-column: 3/9;
-    grid-row: 2/5;
-    width: 100%;
-    height: 100%;
+.logo {
+  display: flex;
+  grid-column: 3/9;
+  grid-row: 2/5;
+  width: 100%;
+  height: 100%;
 }
-.name{
-    grid-column: 2/9;
-    grid-row: 5/6;
-    margin: 0 0 10px 0;
-    color: #ababaa;
+.name {
+  grid-column: 3/10;
+  grid-row: 5/6;
+  margin: 0 0 10px 0;
+  color: #ababaa;
 }
-.subTitle{
-    color: #666666;
-    grid-column: 2/10;
-    grid-row: 6/7;
-    margin:  8px 0 0 0;
-    font-size: 75%;
+.subTitle {
+  color: #666666;
+  grid-column: 3/10;
+  grid-row: 6/7;
+  margin: 8px 0 0 0;
+  font-size: 75%;
 }
-.buttonGroup{
-    grid-column: 1/11;
-    grid-row: 8/15;
+.buttonGroup {
+  grid-column: 1/11;
+  grid-row: 8/15;
 }
-.buttonGroup button{
-    color: #908c86;
-    background-color: #181818;
+.buttonGroup button {
+  color: #908c86;
+  background-color: #181818;
 }
-.iconFacebook{
-    display: flex;
-    grid-column: 2/4;
-    grid-row: 16/17;
-    width: 100%;
-    height: 100%;
+.iconFacebook {
+  display: flex;
+  grid-column: 2/4;
+  grid-row: 16/17;
+  width: 100%;
+  height: 100%;
 }
-.iconInstagram{
-    display: flex;
-    grid-column: 5/7;
-    grid-row: 16/17;
-    width: 100%;
-    height: 100%;
+.iconInstagram {
+  display: flex;
+  grid-column: 5/7;
+  grid-row: 16/17;
+  width: 100%;
+  height: 100%;
 }
-.iconTwitter{
-    display: flex;
-    grid-column: 8/10;
-    grid-row: 16/17;
-    width: 100%;
-    height: 100%;
+.iconTwitter {
+  display: flex;
+  grid-column: 8/10;
+  grid-row: 16/17;
+  width: 100%;
+  height: 100%;
+}
+
+/* responsive design  */
+@media screen and (max-width: 639px) {
+}
+@media screen and (max-width: 1023px) {
+  .menuContainer {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1536px) {
 }

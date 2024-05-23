@@ -1,28 +1,46 @@
 :root {
-    --color-focus: #4fdbb8;
-    --colorback:#1d1d1d;
-    --margin-left: 135px;
-  }
-/* componente SectiionTable */
-.app{
-    background-color: var(--colorback);
-    /* border: 2px solid red; */
-    margin-left: var(--margin-left);
-    padding-top: 8%;
+  --color-focus: #4fdbb8;
+  --colorback: #1d1d1d;
+  --margin-left: 135px;
 }
-
-
+/* componente SectiionTable */
+.app {
+  background-color: var(--colorback);
+  margin-left: var(--margin-left);
+  padding-top: 8%;
+}
 
 /* componente Cards */
 
-.card{
-    /* border: 1px solid yellow; */
-    background-color: var(--colorback);
-    color: #fff;
-    box-shadow: 1px 1px 4px black;
-    margin: 0 2% 4% 0;
+.card {
+  /* border: 1px solid yellow; */
+  background-color: var(--colorback);
+  color: #fff;
+  box-shadow: 1px 1px 4px black;
+  margin: 0 2% 4% 0;
 }
-.buttomCard{
-    background-color: var(--color-focus);
-    border: none;
+.buttomCard {
+  background-color: var(--color-focus);
+  border: none;
+}
+
+/* responsive design  */
+@media screen and (max-width: 640px) {
+}
+@media screen and (max-width: 1023px) {
+  .app {
+    margin-left: 0;
+    padding-top: 4rem;
+  }
+  .card {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1536px) {
 }

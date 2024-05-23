@@ -10,40 +10,40 @@ export const SectionTable = () => {
       title: "WEB DEVELOPMENT",
       subtitle: "Fundamentos de HTML5 y CCS",
       paragraph:
-        "El lenguaje de marcado de hipertexto (HTML) estructura documeentos como paginas web",
-        color: '#e4ee89',
+        "El lenguaje de marcado de hipertexto (HTML) estructura documentos como paginas web",
+      color: "#e4ee89",
     },
     {
       id: 2,
       title: "WEB DEVELOPMENT",
       subtitle: "Fundamentos de JavaScript",
-      paragraph: "Fundamentos basicos de programacion WEB",
+      paragraph: "Fundamentos basicos de programación WEB",
     },
     {
       id: 2,
       title: "SQL y Bases de Datos",
       subtitle: "Fundamentos basicos de BD y SQL",
-      paragraph: "Fundamentos basicos para la creacion de BD",
+      paragraph: "Fundamentos basicos para la creación de BD",
     },
     {
       id: 3,
       title: "Framer Motion",
       subtitle: "Fundamentos basicos de Framer Motion",
-      paragraph: "Animaciones utilizando la libreria",
+      paragraph: "Animaciones utilizando esta libreria",
     },
     {
       id: 4,
       title: "Github",
       subtitle: "Uso de tecnologia con fundamentoas solidos",
       paragraph:
-        "Utilizar el sistema de gestion de versiones Git cuando estas tienen un ran numero de archivos de codigo fuente",
+        "Utilizar el sistema de gestion de versiones Git cuando estas tienen un gran numero de archivos de codigo fuente",
     },
     {
       id: 5,
       title: "API",
       subtitle: "Interfaz de Programación de Aplicaciones",
       paragraph:
-        "Conocimiento para la comunicacion entre dos componenttes de software comunicarse entre si mediante el un conjunto de definiciones y protocolos",
+        "Conocimiento para la comunicacion entre dos componentes de software comunicarse entre si mediante el conjunto de definiciones y protocolos",
     },
   ];
 
@@ -52,7 +52,7 @@ export const SectionTable = () => {
       <div className="container d-flex justify-content-center align-items-center h-100">
         <div className="row">
           {cards.map((card) => (
-            <div className="col-md-4" key={card.key}>
+            <div className={`col-md-4`} key={card.key}>
               <Cards
                 title={card.title}
                 subtitle={card.subtitle}
