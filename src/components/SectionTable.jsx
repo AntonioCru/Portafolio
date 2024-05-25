@@ -8,42 +8,88 @@ export const SectionTable = () => {
     {
       id: 1,
       title: "WEB DEVELOPMENT",
-      subtitle: "Fundamentos de HTML5 y CCS",
+      subtitle: "HTML5 y CCS.",
       paragraph:
-        "El lenguaje de marcado de hipertexto (HTML) estructura documentos como paginas web",
+        "El lenguaje de marcado de hipertexto (HTML) estructura que le damos al contenido web con tecnologias para describir la apariencia/presentación de una pagina web (CSS).",
       color: "#e4ee89",
     },
     {
       id: 2,
       title: "WEB DEVELOPMENT",
-      subtitle: "Fundamentos de JavaScript",
-      paragraph: "Fundamentos basicos de programación WEB",
+      subtitle: "JavaScript",
+      paragraph:
+        "Fundamentos de programacion en JS, front-end. Programacion a utilizar para obtener informacion desde una BD con una API y utilizando diferentes herramientas para la manipulación de la informacion y el consumo de servicios back-end.",
     },
     {
       id: 2,
       title: "SQL y Bases de Datos",
-      subtitle: "Fundamentos basicos de BD y SQL",
-      paragraph: "Fundamentos basicos para la creación de BD",
+      subtitle: "Fundamentos de BD y SQL.",
+      paragraph:
+        "Creación de BD usando MySql, postgreSQL, almacenamiento de datos de forma estructurada. Lenguaje a uilizar para encontrar, cambiar, añadir o eliminar datos.",
     },
     {
       id: 3,
       title: "Framer Motion",
       subtitle: "Fundamentos basicos de Framer Motion",
-      paragraph: "Animaciones utilizando esta libreria",
+      paragraph:
+        "Animaciones utilizando esta biblioteca para animar y gestualizar componentes.",
     },
     {
       id: 4,
-      title: "Github",
-      subtitle: "Uso de tecnologia con fundamentoas solidos",
+      title: "Git",
+      subtitle:
+        "Herramienta utilizada para aislar los cambios y/o combinarlos.",
       paragraph:
-        "Utilizar el sistema de gestion de versiones Git cuando estas tienen un gran numero de archivos de codigo fuente",
+        "Las ramas, punteros ligeros para el trabajo en curso en la que administran esta separación. finalizado el trabajo creado en una rama, se puede combinar de nuevo en la rama principal del equipo.",
     },
     {
       id: 5,
       title: "API",
       subtitle: "Interfaz de Programación de Aplicaciones",
       paragraph:
-        "Conocimiento para la comunicacion entre dos componentes de software comunicarse entre si mediante el conjunto de definiciones y protocolos",
+        "Conocimiento para la comunicacion entre dos aplicaciones de software comunicarse entre si mediante el conjunto de definiciones y protocolos.",
+    },
+    {
+      id: 6,
+      title: "React Js",
+      subtitle: "Libreria de Js.",
+      paragraph:
+        "Paradigma de programacion que enfocamos en componentes, donde cada componente es una pieza con la que el usuario puede interactuar. Bloques de codigo que se crean mediate una sintaxis de JSX, en la que escribimos HTML y opcionalmente CSS dentro de objetos Js. Podemos utilizar Gatsby con react.",
+    },
+    {
+      id: 7,
+      title: "React Js",
+      subtitle: "Libreria de Js.",
+      paragraph:
+        "Paradigma de programacion que enfocamos en componentes, donde cada componente es una pieza con la que el usuario puede interactuar. Bloques de codigo que se crean mediate una sintaxis de JSX, en la que escribimos HTML y opcionalmente CSS dentro de objetos Js.",
+    },
+    {
+      id: 8,
+      title: "Cypress",
+      subtitle: "Herramienta de automatización de pruebas frontend.",
+      paragraph:
+        "Herramienta que utilizamos para la automatizacion de pruebas de front-end utilizando programacion Js.",
+    },
+    {
+      id: 9,
+      title: "Tailwind",
+      subtitle: "Framework de CSS.",
+      paragraph:
+        "Utilizar este framework CSS, donde se usan varias clases de utilidades de un solo propósito que se puede utilizar directamente dentro de un elemento.",
+    },
+    {
+      id: 10,
+      title: "Bootstrap",
+      subtitle: "Framework, marco de diseño.",
+      paragraph:
+        "Utilizar varias clases de diferente utilidad para la creacion de aplicaciones web, ademas de sitios responcivos en diferentes pantallas. Utilizar Bootstrap con los componentes que ya cuenta este Framework para la creacion mas rapida de paginas web.",
+    },
+    {
+      id: 11,
+      title: "Material UI",
+      subtitle: "Biblioteca de componentes de interfaz.",
+      paragraph:
+        "Utilizar los componentes listos para se usados y acelerar el desarrollo de aplicaciones web.",
     },
   ];
 
