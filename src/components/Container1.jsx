@@ -25,6 +25,13 @@ export const Container1 = () => {
     // transition: '1.3s all cubic-bezier(.17,.86,.76,.66)'
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className={styles.container1}>
       <motion.div
@@ -333,7 +340,26 @@ export const Container1 = () => {
             },
           }}
         >
-          y
+          i
+        </motion.span>
+        <motion.span
+          className={stylesC}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            },
+            scale: {
+              type: "spring",
+              damping: 3,
+              mass: 3, //duration y bounce se anulara si se establece stiffness, damping o mass
+              restDelta: 0.001,
+            },
+          }}
+        >
+          o
         </motion.span>
         , <br />
         <motion.span
@@ -677,7 +703,10 @@ export const Container1 = () => {
       </div> */}
 
       <div className={styles.containerbotom2}>
-        <button className={styles.butttomContact2}>
+        <button
+          className={styles.butttomContact2}
+          onClick={() => scrollToSection("MyContact")}
+        >
           <div className={styles.icon2}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -698,7 +727,7 @@ export const Container1 = () => {
       </div>
 
       <div className={styles.containerSubTitulo}>
-        <h2 className={styles.SubTitleH2}>
+        <h2 className={styles.SubTitleH2} id="MyPortafolio">
           <motion.span
             className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
@@ -735,7 +764,7 @@ export const Container1 = () => {
               },
             }}
           >
-            y
+            i
           </motion.span>
           <motion.span
             className={stylesC}
@@ -830,7 +859,7 @@ export const Container1 = () => {
               },
             }}
           >
-            f
+            a
           </motion.span>
           <motion.span
             className={stylesC}
@@ -849,7 +878,7 @@ export const Container1 = () => {
               },
             }}
           >
-            o
+            f
           </motion.span>
           <motion.span
             className={stylesC}
@@ -868,7 +897,7 @@ export const Container1 = () => {
               },
             }}
           >
-            l
+            o
           </motion.span>
           <motion.span
             className={stylesC}
@@ -883,6 +912,25 @@ export const Container1 = () => {
                 type: "spring",
                 damping: 5,
                 mass: 3.5, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            l
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, -0.71, -0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 5,
+                mass: 6.6, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
             }}
@@ -914,7 +962,10 @@ export const Container1 = () => {
             Esta página aún está en desarrollo, espero que sea de su agrado,
             tecnologías que estoy aprendiendo y dispuesto a seguir aprendiendo.
           </p>
-          <button className={styles.buttonsec2}>
+          <button
+            className={styles.buttonsec2}
+            onClick={() => scrollToSection("MyHabilities")}
+          >
             <span className={styles.spanbuttonsec2}>¡Ver mas!</span>
           </button>
         </div>

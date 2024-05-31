@@ -99,6 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .right {
   transform: rotateY(90deg) translateZ(100px);
@@ -107,6 +108,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .top {
   transform: rotateX(90deg) translateZ(100px);
@@ -115,6 +117,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .bottom {
   transform: rotateX(-90deg) translateZ(100px);
@@ -123,6 +126,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .back {
   transform: rotateY(180deg) translateZ(100px);
@@ -131,6 +135,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* responsive design  */

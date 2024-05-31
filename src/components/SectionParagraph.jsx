@@ -22,7 +22,7 @@ export const SectionParagraph = () => {
   return (
     <div className={styles.containerSectionParagraph}>
       <div className={styles.sectionParagraph} ref={ref}>
-        <h2>
+        <h2 id="MyHabilities">
           <motion.span
             className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
@@ -42,9 +42,8 @@ export const SectionParagraph = () => {
           >
             M
           </motion.span>
-
-
-          <motion.span  className={stylesC}
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -58,8 +57,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>e</motion.span>,
-          <motion.span  className={stylesC}
+            }}
+          >
+            i
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -73,8 +76,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>M</motion.span>
-          <motion.span  className={stylesC}
+            }}
+          >
+            s
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -88,8 +95,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>y</motion.span>
-          <motion.span  className={stylesC}
+            }}
+          >
+            -
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -103,8 +114,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>s</motion.span>
-          <motion.span  className={stylesC}
+            }}
+          >
+            H
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -118,8 +133,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>e</motion.span>
-          <motion.span  className={stylesC}
+            }}
+          >
+            a
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -133,8 +152,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>l</motion.span>
-          <motion.span  className={stylesC}
+            }}
+          >
+            b
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -148,8 +171,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>f</motion.span>
-          <motion.span  className={stylesC}
+            }}
+          >
+            i
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -163,8 +190,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>a</motion.span>
-          <motion.span  className={stylesC}
+            }}
+          >
+            l
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -178,8 +209,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>n</motion.span>
-          <motion.span  className={stylesC}
+            }}
+          >
+            i
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -193,8 +228,12 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>d</motion.span>
-          <motion.span  className={stylesC}
+            }}
+          >
+            d
+          </motion.span>
+          <motion.span
+            className={stylesC}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -208,7 +247,67 @@ export const SectionParagraph = () => {
                 mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
                 restDelta: 0.0001,
               },
-            }}>l</motion.span>
+            }}
+          >
+            a
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            d
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            e
+          </motion.span>
+          <motion.span
+            className={stylesC}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 3,
+                mass: 4, //duration y bounce se anulara si se establece stiffness, damping o mass
+                restDelta: 0.0001,
+              },
+            }}
+          >
+            s
+          </motion.span>
         </h2>
 
         <p>
@@ -229,14 +328,20 @@ export const SectionParagraph = () => {
         <div className={styles.containerCube}>
           <div className={styles.cube} ref={ref}>
             {/* <div className={`${styles.side}${styles.front}`}></div> */}
-            <div className={styles.side + " " + styles.front}>JAVASCRIPT</div>
-            <div className={styles.side + " " + styles.left}>CSS</div>
+            <div className={styles.side + " " + styles.front}>
+              REACT, JAVASCRIPT
+            </div>
+            <div className={styles.side + " " + styles.left}>
+              CSS, TAIILWIND, BOOTSTRAP, SASS, FIGMA
+            </div>
             <div className={styles.side + " " + styles.right}>
-              FRAMER MOTION
+              FRAMER MOTION, MATERIAL UI
             </div>
             <div className={styles.side + " " + styles.top}>HTML</div>
-            <div className={styles.side + " " + styles.bottom}>BOOSTRAP</div>
-            <div className={styles.side + " " + styles.back}>REACT JS</div>
+            <div className={styles.side + " " + styles.bottom}>
+              GIT, GITHUB, JIRA, BITBUCKET
+            </div>
+            <div className={styles.side + " " + styles.back}>CYPRESS</div>
           </div>
         </div>
       </div>
