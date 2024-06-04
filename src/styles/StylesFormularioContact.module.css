@@ -25,35 +25,74 @@
   /* flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(4, calc(100% / 4));
-  grid-template-rows: repeat(3, 3rem);
-  gap: 8px;
+  grid-template-rows: repeat(5, 3rem);
+  gap: 28px 8px;
+}
+.containerName {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 .inputText1 {
   border-radius: 8px;
   width: 100%;
-  grid-column: 1/3;
+  height: 100%;
+}
+.containerTelefono {
+  width: 100%;
+  height: 100%;
+  grid-column: 3/5;
   grid-row: 1/2;
 }
 .inputText2 {
   border-radius: 8px;
   width: 100%;
-  grid-column: 3/5;
-  grid-row: 1/2;
+  height: 100%;
+}
+.containerCorreo {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/5;
+  grid-row: 2/3;
 }
 .inputText3 {
   border-radius: 8px;
   width: 100%;
+  height: 100%;
+}
+.containerDireccion {
+  width: 100%;
+  height: 100%;
   grid-column: 1/5;
-  grid-row: 2/3;
+  grid-row: 3/4;
 }
 .inputText4 {
   border-radius: 8px;
   width: 100%;
+  height: 100%;
+}
+.containerDescripcion {
+  width: 100%;
+  height: 100%;
   grid-column: 1/5;
-  grid-row: 3/4;
+}
+.textareaContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 .containerMap {
   border-radius: 8px;
   color: var(--color-focus);
   width: 50%;
+}
+.containerbotom2 {
+  margin-top: 1rem;
+}
+.span2 {
+  transition: 0.4s ease-in-out all;
+  position: absolute;
+  left: 30%;
+  bottom: 25%;
 }
