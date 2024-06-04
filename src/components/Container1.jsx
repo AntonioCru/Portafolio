@@ -959,13 +959,12 @@ export const Container1 = () => {
         </h2>
         <div className={styles.containerparagraph2}>
           <p className={styles.paragraph2}>
-            Me llamo Antonio, soy desarrollador Front-End trabajo a distancia.
-            México, CDMX. En estos ultimos 2 años, me he dedicado a estar en
-            este hambito laboral aprendiendo tecnologias como lo son React js y
-            framenworks para estilizar los sitios. En estos dias me concentro en
-            trabajar en equipo en una organización sin fines de lucro
-            construyendo sus propios aplicaciones web. Disfruto mi trabajo, y
-            dsipuesto a seguir aprendiendo.
+            Me llamo Antonio, soy desarrollador Front-End y actualmente me
+            encuentro en México, CDMX. En estos ultimos 2 años, me he enfocado
+            en aprender tecnologias como lo son React js y framenworks para
+            estilizar los sitios. Me concentro en trabajar en equipo y en una
+            organización construyendo sus propias aplicaciones web. Disfruto mi
+            trabajo, y dispuesto a seguir aprendiendo.
           </p>
           <button
             className={styles.buttonsec2}
