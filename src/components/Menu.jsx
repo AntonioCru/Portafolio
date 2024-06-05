@@ -45,11 +45,14 @@ export const Menu = () => {
       </ButtonGroup>
 
       {/* <img className={styles.iconFacebook} src={iconFacebook} alt="facebook.icon" /> */}
-      <img
+      <a
         className={styles.iconInstagram}
-        src={iconWhatsapp}
-        alt="whatsapp.icon"
-      />
+        href="https://api.whatsapp.com/send/?phone=527296879216&text&type=phone_number&app_absent=0"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={iconWhatsapp} alt="whatsapp.icon" />
+      </a>
       {/* <img className={styles.iconTwitter} src={iconTwitter} alt="twitter.icon" /> */}
     </div>
   );

@@ -139,7 +139,10 @@
 }
 
 /* responsive design  */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 492px) {
+  .sectionParagraph h2 {
+    margin-left: 4vw;
+  }
 }
 @media screen and (max-width: 1023px) {
   .containerSectionParagraph {
@@ -149,7 +152,14 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 574px) {
+  .sectionParagraph p {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 20px !important;
+  }
 }
 @media screen and (min-width: 1024px) {
 }

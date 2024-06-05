@@ -20,7 +20,7 @@ export const SectionParagraph = () => {
   };
 
   return (
-    <div className={styles.containerSectionParagraph}>
+    <div className={styles.containerSectionParagraph} translate="no">
       <div className={styles.sectionParagraph} ref={ref}>
         <h2 id="MyHabilities">
           <motion.span

@@ -1,8 +1,10 @@
 .containerGalery {
   display: grid;
   grid-template-columns: repeat(auto-fill, 20%);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   margin-left: 10%;
+  background-color: var(--colorback);
+  padding-left: 3rem;
 }
 .imgGalery {
   display: flex;

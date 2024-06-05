@@ -274,18 +274,31 @@
     padding-left: 4%;
     padding-right: 3%;
   }
-  .buttonsec2 {
-    top: 8rem;
-  }
   .container1 {
     height: 75rem;
   }
 }
 @media screen and (min-width: 768px) {
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1155px) {
+  .containerparagraph2 {
+    display: block;
+    flex-direction: column;
+  }
+  .buttonsec2 {
+    position: relative;
+  }
+  .paragraph2 {
+    width: 100%;
+  }
+  .buttonsec2 {
+    top: 10px;
+  }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 600px) {
+  .containerSubTitulo {
+    margin-top: 50px;
+  }
 }
 @media screen and (min-width: 1536px) {
 }

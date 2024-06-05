@@ -36,7 +36,11 @@ export const FormularioContact = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className={styles.containerFormularioContact} id="MyContact">
+      <div
+        className={styles.containerFormularioContact}
+        id="MyContact"
+        translate="no"
+      >
         <div className={styles.containerContact}>
           <h2 className={styles.subtitleContact}>Contactame</h2>
           <p className={styles.paragraphContact}>

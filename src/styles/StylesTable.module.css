@@ -1,7 +1,7 @@
 :root {
   --color-focus: #4fdbb8;
   --colorback: #1d1d1d;
-  --colorCard: #262525;
+  --colorCard: #181818;
   --margin-left: 135px;
 }
 /* componente SectiionTable */
@@ -19,6 +19,10 @@
   color: #fff;
   box-shadow: 1px 1px 4px black;
   margin: 0 2% 4% 0;
+}
+.descripcionCard {
+  overflow-y: scroll;
+  height: 80%;
 }
 .buttomCard {
   background-color: var(--color-focus);
