@@ -137,11 +137,20 @@
   justify-content: center;
   text-align: center;
 }
+.containerHabilities {
+  margin-left: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 /* responsive design  */
 @media screen and (max-width: 492px) {
   .sectionParagraph h2 {
     margin-left: 4vw;
+  }
+  .containerHabilities {
+    margin-left: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 1023px) {
@@ -162,6 +171,9 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .containerSectionParagraph {
+    margin-left: 9%;
+  }
 }
 @media screen and (min-width: 1280px) {
 }

@@ -2,6 +2,7 @@ import { useAnimationFrame } from "framer-motion";
 import React, { useRef } from "react";
 import styles from "../styles/StylesSectionParagraph.module.css";
 import { motion, useInView } from "framer-motion";
+import LinearProgressComponent from "./LinearProgressComponent";
 
 export const SectionParagraph = () => {
   const ref = useRef(null);
@@ -310,18 +311,46 @@ export const SectionParagraph = () => {
           </motion.span>
         </h2>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-          laudantium labore saepe quod numquam sed quidem ullam veritatis dicta
-          necessitatibus tempora quia architecto officiis inventore, et, iusto
-          soluta neque ipsam. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Porro, sed eius. Asperiores ullam illo nemo fugit ducimus ipsum
-          suscipit, provident doloremque! Officiis atque, explicabo blanditiis
-          dolor molestias laborum a labore. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Atque eos sit aperiam suscipit ipsa
-          adipisci ea neque ullam ut earum natus beatae excepturi, nobis cum
-          fugiat id, quia error? Quod?
-        </p>
+        <div className={styles.containerHabilities}>
+          <LinearProgressComponent skillName="Eslint" skillLevel={3.5} />
+          <LinearProgressComponent
+            skillName="Visual Studio Code"
+            skillLevel={3.5}
+          />
+          <LinearProgressComponent
+            skillName="MySql, PostgreSql"
+            skillLevel={2.5}
+          />
+          <LinearProgressComponent skillName="Ingles" skillLevel={2.5} />
+          <LinearProgressComponent skillName="Autodidacta" skillLevel={4.5} />
+          <LinearProgressComponent skillName="Adaptable" skillLevel={4.5} />
+          <LinearProgressComponent skillName="Comprometido" skillLevel={4.5} />
+          <LinearProgressComponent skillName="Responsable" skillLevel={4.5} />
+          <LinearProgressComponent skillName="Git" skillLevel={3.5} />
+          <LinearProgressComponent skillName="Bootstrap" skillLevel={3.5} />
+          <LinearProgressComponent skillName="Tailwind" skillLevel={3.5} />
+          <LinearProgressComponent
+            skillName="Trabajo en equipo"
+            skillLevel={4.5}
+          />
+          <LinearProgressComponent skillName="Comunicación" skillLevel={3.5} />
+          <LinearProgressComponent
+            skillName="Base de datos relacionales"
+            skillLevel={3.5}
+          />
+          <LinearProgressComponent
+            skillName="Html5, css y JavaScript"
+            skillLevel={4.5}
+          />
+          <LinearProgressComponent
+            skillName="Programas de edición"
+            skillLevel={1.5}
+          />
+          <LinearProgressComponent skillName="React js" skillLevel={3.5} />
+          <LinearProgressComponent skillName="Cypress" skillLevel={1.5} />
+        </div>
+        {/* <p>       
+        </p> */}
       </div>
 
       <div className={styles.container3d}>
